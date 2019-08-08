@@ -4,7 +4,7 @@ IFS=,
 [ ! -f $INPUT ] && { echo "$INPUT file not found"; exit 99; }
 while read id 
 do
-	echo "$id"
-	curl -X GET "http://35.173.249.53:9000/query/graph500/Insert_Vertex?id="id""
+	echo "ID : $id"
+	curl -X GET localhost:9000/query/graph500/Insert_Vertex?id=id
 done < $INPUT
 IFS=$OLDIFS
