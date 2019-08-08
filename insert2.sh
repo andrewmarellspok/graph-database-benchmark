@@ -5,6 +5,6 @@ IFS=,
 while read id 
 do
 	echo "$id"
-	curl -X GET "localhost:9000/query/graph500/Insert_Vertex?id="$id""
+	curl -X GET "localhost:9000/query/graph500/Insert_Vertex?id=$id"
 done < $INPUT
 IFS=$OLDIFS
