@@ -1,4 +1,4 @@
-|curl -X POST -d '{"vertices":{"Provider":   
+curl -X POST -d '{"vertices":{"Provider":   
   {
     "id": 1992997175
   },
